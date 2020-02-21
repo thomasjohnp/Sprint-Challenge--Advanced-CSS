@@ -1,20 +1,19 @@
 // Navigation code here
 
-.navBar {
-    width: 100%;
+#navBar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: @waterloo;
-    @media @mobile {
+    background-color: @nav-bg;
+    margin-bottom: 0;
 
-  }
     h1 {
         font-size: 3rem;
         margin: 1.5% auto 2% auto;
 
-      @media @mobile {
+      @media (max-width: 500px) {
+          
         }
   }
   
@@ -32,6 +31,8 @@
         text-decoration: none;
         color: black;
         font-weight: bold;
+        margin-bottom: 2vh;
+
         @media @mobile {
           font-size: 1.5rem;
       }
