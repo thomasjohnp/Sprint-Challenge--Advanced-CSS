@@ -23,6 +23,7 @@
       @media @mobile {
         margin: 0 auto;
         width: 90%;
+        margin-top: 20px;
       }
     }
 
@@ -62,27 +63,39 @@
     @media @mobile {
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      padding: 10px 20px;
-      width: 100%;
+      justify-content: center;
+      padding: 4px 3px;
+      width: 90vw;
+      margin: 0 auto;
     }
 
     .walk-text {
       width: 50%;
 
+      @media @mobile {
+        margin-top: 2px;
+        margin-bottom: 1px;
+        width: 100%;
+        text-align: justify;
+      }
       h3 {
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
+        @media @mobile {
+          margin-bottom: 2.2rem;
+        }
+  
       }
 
       .btn {
         .customButton();
-        @media @mobile {
-          width: 90%;
-        }
+          @media @mobile {
+            width: 100vw;
+            height: 6vh;
+          }
 
       }
     }
@@ -92,6 +105,10 @@
       margin-left: 4%;
       @media @mobile {
         order: -1;
+        margin-left: 0;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
       }
     
       img {
@@ -107,7 +124,4 @@
   border-radius: 7px;
   margin: 0 auto;
   max-width: 100%;
-
-  @media @mobile {
-  }
 }
