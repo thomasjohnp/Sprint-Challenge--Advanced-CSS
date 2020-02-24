@@ -1,1 +1,43 @@
 // Navigation code here
+
+#navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: @nav-bg;
+    margin-bottom: 0;
+
+    h1 {
+        font-size: 3rem;
+        margin: 1.5% auto 2% auto;
+
+      @media (max-width: 500px) {
+          
+        }
+  }
+  
+    nav {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      @media @mobile {
+          justify-content: space-between;
+          width: 78%;
+          margin-bottom: 0.75rem;
+      }
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 2vh;
+
+        @media @mobile {
+          font-size: 1.5rem;
+      }
+  
+      }
+    }
+  
+  }
